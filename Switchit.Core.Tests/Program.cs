@@ -376,7 +376,7 @@ var tests = new (string Name, Action Run)[]
     ("Missing state creates default tasks once and preserves their saved ids", () => WithStore((store, _, _) =>
     {
         var engine = store.Load();
-        True(new[] { "휴식", "업무 A", "업무 B" }.SequenceEqual(engine.Items.Select(item => item.Name)));
+        True(new[] { "휴식", "업무1", "업무2" }.SequenceEqual(engine.Items.Select(item => item.Name)));
         True(new[] { "#88A789", "#D58364", "#CBA662" }.SequenceEqual(engine.Items.Select(item => item.Color)));
         FreshSession(engine);
         var ids = engine.Items.Select(item => item.Id).ToArray();

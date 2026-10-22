@@ -38,3 +38,6 @@
 2026-10-23 08:49:20 KST | Switchit! Windows x64 Release published (self-contained=true).
 2026-10-23 08:49:39 KST | Switchit! 1.0.0 EXE installer built with SHA256 checksum.
 2026-10-23 08:52:00 KST | 내부 프로젝트·네임스페이스·아이콘 Switchit 정리 및 데이터 일회성 이전 추가; 핵심 29/29·UI 20/20, EXE 설치/제거·기존 영수증16개 보존·정식 설치 실행·업무/설정/픽셀 위치 이전 검증 완료.
+2026-10-23 08:53:33 KST | Switchit! Windows x64 Release published (self-contained=true).
+2026-10-23 08:53:50 KST | Switchit! 1.0.0 EXE installer built with SHA256 checksum.
+2026-10-23 08:55:01 KST | 배포 기본 항목 휴식·업무1·업무2로 정리, 설치 시 시작프로그램 선택(기본 해제) 및 재설치 해제 기능 추가; 선택/해제 실제 설치 검증·기존 업무 유지 실행 확인.

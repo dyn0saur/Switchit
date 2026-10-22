@@ -44,6 +44,14 @@ Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
+Name: "startup"; Description: "{cm:StartupOption}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
+[CustomMessages]
+english.StartupOption=Start Switchit! when I sign in to Windows
+korean.StartupOption=Windows 로그인 시 Switchit! 실행
+
+[InstallDelete]
+Type: files; Name: "{userstartup}\Switchit!.lnk"; Tasks: not startup
 
 [Files]
 Source: "{#PayloadDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -51,6 +59,7 @@ Source: "{#PayloadDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 [Icons]
 Name: "{group}\Switchit!"; Filename: "{app}\Switchit.exe"; WorkingDir: "{app}"
 Name: "{autodesktop}\Switchit!"; Filename: "{app}\Switchit.exe"; WorkingDir: "{app}"; Tasks: desktopicon
+Name: "{userstartup}\Switchit!"; Filename: "{app}\Switchit.exe"; WorkingDir: "{app}"; Tasks: startup
 
 [Run]
 Filename: "{app}\Switchit.exe"; Description: "{cm:LaunchProgram,Switchit!}"; Flags: nowait postinstall skipifsilent

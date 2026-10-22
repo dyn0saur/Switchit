@@ -20,8 +20,8 @@ public sealed class ClockEngine
         if (addDefaults)
         {
             AddItem("휴식", "#88A789");
-            AddItem("업무 A", "#D58364");
-            AddItem("업무 B", "#CBA662");
+            AddItem("업무1", "#D58364");
+            AddItem("업무2", "#CBA662");
         }
     }
 
