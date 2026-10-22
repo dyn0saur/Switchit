@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>../assets/Switchit.ico</ApplicationIcon>
+    <AssemblyName>Switchit</AssemblyName>
+    <RootNamespace>Switchit</RootNamespace>
+    <Product>Switchit!</Product>
+    <Title>Switchit!</Title>
+    <AssemblyTitle>Switchit!</AssemblyTitle>
+    <Version>1.0.0</Version>
+    <Description>Switchit! activity time tracker</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Switchit.Core/Switchit.Core.csproj" />
+    <Resource Include="../assets/Switchit.ico" Link="Switchit.ico" />
+  </ItemGroup>
+</Project>
